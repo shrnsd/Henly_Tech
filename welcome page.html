@@ -1,0 +1,109 @@
+<html>
+<head>
+  <title>Henly tech</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: white;
+      color: black;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    nav {
+      background: purple;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(10, 116, 218, 0.3);
+      margin-top: 20px;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav .logo {
+      padding:5px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li {
+      font-weight: 500;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 8px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    nav ul li a:hover,
+    nav ul li a:focus {
+      background-color:cadetblue;
+      outline: none;
+    }
+    .hero {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: purple;
+      margin-bottom: 16px;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: 0 auto;
+      color:dimgray;
+    }
+    footer {
+      background: purple;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+      border-radius: 8px 8px 0 0;
+      margin-top: auto;
+      box-shadow: 0 -2px 8px rgba(10, 116, 218, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo"><img src="hnl.png" width="200px"></div>
+    <ul>
+      <li><a href="#home" tabindex="1">Home</a></li>
+      <li><a href="#about" tabindex="2">About</a></li>
+      <li><a href="#contact" tabindex="3">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <section id="home" class="hero" role="main" aria-label="Welcome Section">
+      <h1>Welcome to Henly Tech</h1>
+      <p>We are located at Gorimedu, Puducherry. We specialize in computer software development built on AI, automation and 
+        data-driven designs. Delivering scalable systems that solve real world challenges and driving business success is
+        our ultimate goal. Having more than 15 years of experience in the field, we excel at web development.</p>
+    </section>
+  </div>
+  <footer>
+    &copy; 2025 Henly Tech &mdash; Contact us: info.henlytech@gmail.com | +91 94862 80683
+  </footer>
+</body>
+</html>

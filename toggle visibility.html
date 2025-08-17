@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>Visibility toggling</title>
+<style>
+  body {
+    background: lightgray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: dimgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+  }
+  .container {
+    background: white;
+    padding: 30px 40px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  p {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 1rem;
+    color: gray;
+  }
+  button {
+    background-color: dodgerblue;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+    user-select: none;
+  }
+  button:hover {
+    background-color: royalblue;
+  }
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(30,144,255,0.5);
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <button id="toggleBtn">Show/hide text</button>
+    <p id="text" style="display:none;">
+      We are located at Gorimedu, Puducherry. We specialize in computer software development built on AI, automation and 
+        data-driven designs. Delivering scalable systems that solve real world challenges and driving business success is
+        our ultimate goal. Having more than 15 years of experience in the field, we excel at web development.
+    </p>
+  </div>
+
+  <script>
+    const btn = document.getElementById('toggleBtn');
+    const text = document.getElementById('text');
+
+    btn.addEventListener('click', () => {
+      if (text.style.display === 'none') {
+        text.style.display = 'block';
+      } else {
+        text.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
